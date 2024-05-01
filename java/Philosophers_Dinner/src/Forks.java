@@ -15,7 +15,4 @@ public class Forks {
     public void put() throws InterruptedException{
         semaphore.release();
     }
-    public boolean tryTake() throws InterruptedException{
-        return semaphore.tryAcquire();
-    }
 }
