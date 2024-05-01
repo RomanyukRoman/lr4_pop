@@ -6,8 +6,8 @@ public class Asymetric extends Thread {
 
     public Asymetric(int id, Forks fork1, Forks fork2){
         this.id = id;
-        this.leftfForks = (this.id % 2 == 0) ? fork1 : fork2;
-        this.rightForks = (this.id % 2 == 0) ? fork2 : fork1;
+        this.leftfForks = (this.id % 2 == 0) ? fork2 : fork1;
+        this.rightForks = (this.id % 2 == 0) ? fork1 : fork2;
         Asymetric.amount++;
     }
 
